@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- Этот тег важен, чтобы сайт подстраивался под ширину экрана телефона -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <style>
+        /* Черный фон, белый текст, крупный шрифт для телефона */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif; /* Обычный шрифт, хорошо читается */
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        /* Картинка клоуна в правом верхнем углу */
+        .jester {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 80px; /* Маленький размер, чтобы не мешал */
+            opacity: 0.7;
+        }
+
+        /* Контейнер для текста */
+        .info {
+            margin-top: 90px; /* Отступ сверху, чтобы текст не налезал на клоуна */
+            font-size: 20px; /* Крупный шрифт */
+            line-height: 1.6; /* Расстояние между строками */
+        }
+
+        /* Выделяем названия (name, age и т.д.) серым цветом для красоты */
+        .label {
+            color: #aaaaaa;
+        }
+
+        /* Текст "и т.д." сделаем чуть меньше и тусклее */
+        .etc {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Фотка клоуна. Замени ссылку в src на прямую ссылку твоей картинки, если нужно -->
+    <img src="https://i.ibb.co/6P5g4xZ/jester.png" alt="Jester" class="jester">
+
+    <div class="info">
+        <div><span class="label">name:</span> Константин</div>
+        <div><span class="label">age:</span> 13</div>
+        <div><span class="label">город:</span> Самара</div>
+        
+        <div class="etc">и т.д.</div>
+    </div>
+
+</body>
+</html>
